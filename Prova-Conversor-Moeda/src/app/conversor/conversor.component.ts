@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./conversor.component.css']
 })
 export class ConversorComponent {
-      
-}
+     valor: number = 0;
+     cambio: number = 0;
+     resultado: number = 0; 
+
+
+converter(){
+  this.resultado = (this.valor) * (this.cambio);
+  this.resultado = parseFloat(this.resultado.toFixed(2));
+  }
+} 
