@@ -12,7 +12,7 @@ export class ConversorComponent {
 
 
 converter(){
-  this.resultado = (this.valor) * (this.cambio);
+  this.resultado = (this.valor) / (this.cambio);
   this.resultado = parseFloat(this.resultado.toFixed(2));
   }
 } 
