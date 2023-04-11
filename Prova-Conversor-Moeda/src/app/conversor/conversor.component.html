@@ -1,10 +1,10 @@
 <div>
     <div class="box">
         <h1> CONVERSOR DE MOEDAS </h1>
-        <div class="titulos">
-        <label> Valor a ser convertido: </label>
-        <label> Valor do cambio: </label>
-        </div>
+       
+        <label class="titulo1"> Valor a ser convertido: </label>
+        <label class="titulo2"> Valor do cambio: </label>
+
         <div class="entradas">
         <input type="number" name="valor" [(ngModel)]="valor" class="input">
         <input type="number" name="cambio" [(ngModel)]="cambio" class="input"><br><br>
@@ -20,12 +20,15 @@
             <br>
             <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" (click)="Real_PesoA()">
             <label class="btn btn-outline-primary" for="btnradio3">Real para Peso Argentino</label>
+        
           </div>
           </div>
          
-
+          <br><br>
+          <label class="titulo3">Resultado da conversão</label><br>
+          <div class="result">
           <input [value]= "resultado" id="resultado" class="resultado" readonly>
-
+          </div>
     
         
     </div>

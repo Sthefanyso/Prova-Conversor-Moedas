@@ -12,15 +12,16 @@ export class ConversorComponent {
 
 Real_Dolar(){
   this.resultado = (this.valor) / (this.cambio);
-  this.resultado = parseFloat(this.resultado.toFixed(2));
+  this.resultado = parseFloat(this.resultado.toFixed(3));
   }
 Real_Euro(){
   this.resultado = (this.valor) * (this.cambio);
-  this.resultado = parseFloat(this.resultado.toFixed(2));
+  this.resultado = parseFloat(this.resultado.toFixed(3));
   }
 Real_PesoA(){
   this.resultado = (this.valor) * (this.cambio);
-  this.resultado = parseFloat(this.resultado.toFixed(2));
+  this.resultado = parseFloat(this.resultado.toFixed(3));
   }
+  
 
 } 
