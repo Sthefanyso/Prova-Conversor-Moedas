@@ -1,23 +1,29 @@
 <div>
     <div class="box">
         <h1> CONVERSOR DE MOEDAS </h1>
+        <div class="titulos">
+        <label> Valor a ser convertido: </label>
+        <label> Valor do cambio: </label>
+        </div>
         <div class="entradas">
         <input type="number" name="valor" [(ngModel)]="valor" class="input">
         <input type="number" name="cambio" [(ngModel)]="cambio" class="input"><br><br>
          </div>
 
-         
+         <div class="bottons">
          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked (click)="converter()">
-            <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label>
-          
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio3">Radio 3</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked (click)="Real_Dolar()">
+            <label class="btn btn-outline-primary" for="btnradio1">Real para Dólar</label>
+            <br>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"  (click)="Real_Euro()">
+            <label class="btn btn-outline-primary" for="btnradio2">Real para Euro</label>
+            <br>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" (click)="Real_PesoA()">
+            <label class="btn btn-outline-primary" for="btnradio3">Real para Peso Argentino</label>
+          </div>
           </div>
          
+
           <input [value]= "resultado" id="resultado" class="resultado" readonly>
 
     
